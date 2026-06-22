@@ -3,27 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Waseem Global Solutions | Premium Multi-Service Agency</title>
+    <title>Al Waseem Global Solutions | Premium Travel Agency</title>
     
-    <!-- Premium Google Fonts -->
+    <!-- Premium Typography and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Perfectly Scaled Modern Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- All Premium Styles Built Directly In To Avoid Broken Links -->
     <style>
         :root {
-            --color-primary: #062c1d;     /* Deep Luxury Forest Green */
-            --color-secondary: #0a3d29;   /* Medium Forest Accent */
-            --color-accent: #c5a880;      /* Soft Premium Gold */
-            --color-accent-hover: #b3946b;
-            --color-dark: #050b08;        /* Rich Pitch Black Base */
-            --color-light: #f4f7f5;
-            --font-primary: 'Plus Jakarta Sans', sans-serif;
+            --color-primary: #042416;     /* Deep Luxury Forest Green */
+            --color-accent: #c4a474;      /* Premium Gold */
+            --color-dark: #02120b;
             --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
         }
 
         * {
@@ -33,58 +27,93 @@
         }
 
         body {
-            background-color: var(--color-dark);
-            color: #cbd5e1;
-            font-family: var(--font-primary);
-            -webkit-font-smoothing: antialiased;
+            font-family: var(--font-sans);
+            background-color: #ffffff;
+            color: #334155;
             overflow-x: hidden;
             line-height: 1.6;
         }
 
-        /* Premium Header Navigation */
+        /* --- NAVIGATION --- */
         header {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 100;
-            background: rgba(5, 11, 8, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(197, 168, 128, 0.1);
-            padding: 1.25rem 5%;
+            z-index: 10;
+            padding: 2rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
             font-weight: 700;
-            color: #ffffff;
-            letter-spacing: 1px;
+            color: var(--color-accent);
+            letter-spacing: 2px;
         }
 
-        .logo span {
+        nav {
+            display: none;
+        }
+
+        @media (min-width: 992px) {
+            nav {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
             color: var(--color-accent);
         }
 
-        /* Hero Showcase Section */
+        .btn-started {
+            background: transparent;
+            border: 1px solid var(--color-accent);
+            color: #ffffff;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-started:hover {
+            background: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        /* --- HERO SECTION --- */
         .hero {
             position: relative;
-            min-height: 80vh;
-            padding: 8rem 5% 4rem;
+            min-height: 85vh;
+            background: linear-gradient(rgba(4, 36, 22, 0.65), rgba(4, 36, 22, 0.4)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: radial-gradient(circle at 90% 10%, rgba(6, 44, 29, 0.4) 0%, transparent 60%);
+            align-items: center;
+            text-align: center;
+            padding: 0 5% 6rem;
         }
 
-        .hero-tag {
+        .hero-subtitle {
             color: var(--color-accent);
+            font-size: 0.9rem;
             text-transform: uppercase;
-            font-size: 0.85rem;
             letter-spacing: 3px;
             font-weight: 600;
             margin-bottom: 1rem;
@@ -92,19 +121,589 @@
 
         .hero-title {
             font-family: var(--font-serif);
-            font-size: 2.8rem;
-            line-height: 1.15;
+            font-size: 2.5rem;
             color: #ffffff;
+            max-width: 900px;
+            line-height: 1.2;
             margin-bottom: 1.5rem;
-            max-width: 600px;
+            font-weight: 500;
         }
 
-        .hero-title span {
-            background: linear-gradient(135deg, #ffffff 0%, var(--color-accent) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        @media (min-width: 768px) {
+            .hero-title { font-size: 4.2rem; }
         }
 
+        .hero-line {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #ffffff;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .hero-line::before, .hero-line::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 1px;
+            background: var(--color-accent);
+        }
+
+        /* --- FLOATING INQUIRY BAR --- */
+        .floating-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: -4rem auto 0;
+            position: relative;
+            z-index: 5;
+        }
+
+        .floating-bar {
+            background: #ffffff;
+            border-radius: 100px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            padding: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bar-item {
+            flex: 1;
+            min-width: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0.5rem;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .bar-item:nth-last-child(2) {
+            border-right: none;
+        }
+
+        .bar-item i {
+            color: var(--color-primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .bar-item span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .btn-inquiry {
+            background: var(--color-primary);
+            color: #ffffff;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: background 0.3s;
+        }
+
+        .btn-inquiry i {
+            color: var(--color-accent);
+            font-size: 1rem;
+        }
+
+        .btn-inquiry:hover {
+            background: #063621;
+        }
+
+        @media (max-width: 991px) {
+            .floating-bar { border-radius: 24px; padding: 1.5rem; }
+            .bar-item { border-right: none; border-bottom: 1px solid #e2e8f0; width: 50%; }
+            .btn-inquiry { width: 100%; justify-content: center; margin-top: 1rem; }
+        }
+
+        /* --- ABOUT SECTION --- */
+        .about-section {
+            padding: 8rem 5% 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (min-width: 992px) {
+            .about-section { grid-template-columns: 1fr 1fr; }
+        }
+
+        .section-tag {
+            color: var(--color-accent);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-tag::after {
+            content: "";
+            width: 30px;
+            height: 1px;
+            background: var(--color-accent);
+        }
+
+        .about-title {
+            font-family: var(--font-serif);
+            font-size: 2.4rem;
+            color: var(--color-primary);
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .about-text {
+            color: #475569;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-images {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .circle-frame {
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            border: 2px solid var(--color-accent);
+            padding: 8px;
+        }
+
+        .circle-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .badge-trusted {
+            position: absolute;
+            bottom: 10px;
+            right: 40px;
+            width: 120px;
+            height: 120px;
+            background: var(--color-primary);
+            border: 2px solid var(--color-accent);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge-trusted i {
+            color: var(--color-accent);
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        /* --- SERVICES SECTION --- */
+        .services-section {
+            background-color: #fafafa;
+            padding: 6rem 5%;
+            text-align: center;
+        }
+
+        .services-header {
+            margin-bottom: 4rem;
+        }
+
+        .services-header h2 {
+            font-family: var(--font-serif);
+            font-size: 2.6rem;
+            color: var(--color-primary);
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        .services-header h2::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: var(--color-accent);
+            margin: 0.75rem auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon-box {
+            width: 70px;
+            height: 70px;
+            background: transparent;
+            border: 2px solid var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .service-icon-box i {
+            color: var(--color-primary);
+            font-size: 1.8rem;
+        }
+
+        .service-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* --- DESTINATIONS --- */
+        .destinations-section {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .dest-card {
+            position: relative;
+            height: 280px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .dest-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dest-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .dest-overlay h4 {
+            color: #ffffff;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* --- CALL TO ACTION BAR --- */
+        .cta-bar {
+            background-color: var(--color-primary);
+            color: #ffffff;
+            padding: 4rem 8%;
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        @media (min-width: 992px) {
+            .cta-bar { flex-direction: row; justify-content: space-between; align-items: center; }
+        }
+
+        .cta-left h2 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .cta-left p {
+            opacity: 0.8;
+            font-size: 1rem;
+            max-width: 500px;
+        }
+
+        .cta-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(196, 164, 116, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-accent);
+            font-size: 1.1rem;
+        }
+
+        .contact-info span {
+            display: block;
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .btn-cta-connect {
+            background: var(--color-accent);
+            color: var(--color-primary);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            transition: background 0.3s;
+        }
+
+        .btn-cta-connect:hover {
+            background: #b59567;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--color-dark);
+            color: #ffffff;
+            padding: 4rem 5% 2rem;
+            border-top: 1px solid rgba(196, 164, 116, 0.1);
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .footer-col h3 {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.2rem;
+            color: #ffffff;
+        }
+
+        .footer-col p {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            line-height: 1.8;
+            max-width: 300px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 36px;
+            height: 36px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            opacity: 0.6;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--color-accent);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Transparent Luxury Navbar Header -->
+    <header>
+        <div class="logo">AL WASEEM GLOBAL SOLUTIONS</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Destinations</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <a href="https://wa.me/2348149945127" class="btn-started">Get Started</a>
+    </header>
+
+    <!-- Main Visual Hero Frame -->
+    <section class="hero">
+        <span class="hero-subtitle">Al Waseem Global Solutions</span>
+        <h1 class="hero-title">CONNECTING YOU TO GLOBAL OPPORTUNITIES</h1>
+        <div class="hero-line">Your Bridge to Global Connections</div>
+    </section>
+
+    <!-- Overlapping Floating Tab-Bar Component -->
+    <div class="floating-container">
+        <div class="floating-bar">
+            <div class="bar-item">
+                <i class="fa-solid fa-passport"></i>
+                <span>Egypt Visa</span>
+            </div>
+            <div class="bar-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Admission Processing</span>
+            </div>
+            <div class="bar-item">
+                <i class="fa-solid fa-ticket"></i>
+                <span>Ticket Reservations</span>
+            </div>
+            <div class="bar-item">
+                <i class="fa-solid fa-comments-dollar"></i>
+                <span>Travel Consultations</span>
+            </div>
+            <button class="btn-inquiry" onclick="window.location.href='https://wa.me/2348149945127'">
+                <i class="fa-solid fa-magnifying-glass"></i> Inquiry
+            </button>
+        </div>
+    </div>
+
+    <!-- Dual-Column Strategic About Frame -->
+    <section class="about-section">
+        <div>
+            <div class="section-tag">About Us</div>
+            <h2 class="about-title">Your Trusted<br>Travel Partner</h2>
+            <p class="about-text">At Al Waseem Global Solutions, we provide reliable support for Egypt visa processing, admission applications, ticket reservations, and travel consultations.</p>
+            <p class="about-text">Our goal is to simplify every step of your journey and help you access opportunities beyond borders with confidence and peace of mind.</p>
+        </div>
+        <div class="about-images">
+            <div class="circle-frame">
+                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80" alt="Travel Landscape">
+            </div>
+            <div class="badge-trusted">
+                <i class="fa-solid fa-shield-halved"></i>
+                Trusted Travel Partner
+            </div>
+        </div>
+    </section>
+
+    <!-- Quad-Matrix Core Service Delivery -->
+    <section class="services-section">
+        <div class="services-header">
+            <span class="section-tag" style="justify-content: center; margin-bottom: 0.5rem;">What We Offer</span>
+            <h2>Our Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon-box"><i class="fa-solid fa-passport"></i></div>
+                <h3>Egypt Visa Processing</h3>
+                <p>Professional assistance with visa application procedures and requirements.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-box"><i class="fa-solid fa-ticket"></i></div>
+                <h3>Ticket Reservations</h3>
+                
         .hero-desc {
             font-size: 1rem;
             color: #94a3b8;
