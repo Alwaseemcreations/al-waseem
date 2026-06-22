@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Waseem Global Solutions | Your Bridge to Global Connections</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Playfair Display for Classical/Modern Balance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme {
+                extend: {
+                    colors: {
+                        forestGreen: '#0b4020',
+                        goldAccent: '#d4af37',
+                        goldHover: '#aa8c2c',
+                        neutralBg: '#f9fbf9'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body class="bg-neutralBg font-sans text-gray-800 antialiased">
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo Frame -->
+            <div class="flex items-center space-x-3">
+                <!-- Fallback standard styled text matching your 1000024283.png structure -->
+                <div class="font-serif text-xl tracking-wider text-forestGreen font-bold flex flex-col leading-none">
+                    <span class="text-2xl tracking-normal text-forestGreen">AL WASEEM</span>
+                    <span class="text-xs tracking-[0.25em] text-goldAccent font-sans font-medium mt-1">GLOBAL SOLUTIONS</span>
+                </div>
+            </div>
+            <!-- Nav Links -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-forestGreen transition">Why Choose Us</a>
+                <a href="#services" class="hover:text-forestGreen transition">Our Services</a>
+                <a href="#faqs" class="hover:text-forestGreen transition">FAQs</a>
+            </div>
+            <!-- CTA Button -->
+            <div>
+                <a href="https://wa.me/201279994345" target="_blank" class="border border-forestGreen text-forestGreen px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-forestGreen hover:text-white transition-all duration-300">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION (Layout matching 1001208146.jpg) -->
+    <header class="relative bg-white pt-16 pb-24 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <!-- Top Tag Badge -->
+            <div class="inline-flex items-center space-x-2 bg-forestGreen/5 border border-forestGreen/10 rounded-full px-4 py-1.5 mb-6">
+                <span class="w-2 h-2 rounded-full bg-goldAccent animate-pulse"></span>
+                <span class="text-xs font-semibold text-forestGreen uppercase tracking-wider">Reliable International Operations</span>
+            </div>
+            
+            <!-- Main Typography Headline -->
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-gray-900 font-extrabold tracking-tight max-w-4xl mx-auto leading-[1.15] mb-6">
+                Ready to Start Your <span class="text-forestGreen underline decoration-goldAccent decoration-4 underline-offset-8">Global Journey</span> with Us?
+            </h1>
+            
+            <!-- Company Official Tagline -->
+            <p class="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                Your bridge to global connections. Expert guidance across corporate lines, educational institutions, and logistics networks.
+            </p>
+
+            <!-- Interactive Search/Inquiry Bar Mockup -->
+            <div class="bg-white p-4 rounded-2xl shadow-xl border border-gray-100 max-w-3xl mx-auto flex flex-col sm:flex-row gap-3 items-center mb-16">
+                <div class="w-full text-left sm:border-r border-gray-100 px-4 py-2">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">What do you need?</label>
+                    <select class="w-full text-gray-800 font-medium focus:outline-none bg-transparent">
+                        <option>Egypt Visa Processing</option>
+                        <option>Egypt University Admission</option>
+                        <option>Flight Ticket Reservation</option>
+                        <option>Logistics & Cargo Support</option>
+                    </select>
+                </div>
+                <div class="w-full text-left px-4 py-2">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Preferred Contact</label>
+                    <span class="text-gray-800 font-medium block">Instant WhatsApp Chat</span>
+                </div>
+                <a href="https://wa.me/201279994345" target="_blank" class="w-full sm:w-auto bg-forestGreen hover:bg-opacity-95 text-white font-medium px-8 py-4 rounded-xl shadow-lg transition flex items-center justify-center space-x-2 whitespace-nowrap">
+                    <span>Inquire Now</span>
+                    <i class="fa-solid fa-arrow-right text-xs text-goldAccent"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Geometric Forest Accent background effect -->
+        <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-neutralBg to-transparent pointer-events-none"></div>
+    </header>
+
+    <!-- 3. TRUST AUTHORITY BAR (Layout matching 1001208147.jpg) -->
+    <section class="bg-white border-y border-gray-100 py-8">
+        <div class="max-w-5xl mx-auto px-4 flex flex-wrap justify-center items-center gap-12 text-gray-400 font-semibold tracking-widest text-sm uppercase">
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-passport text-forestGreen/40"></i> <span>Egypt Gateway</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-graduation-cap text-forestGreen/40"></i> <span>Academic Placement</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-ship text-forestGreen/40"></i> <span>Global Freight</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-shield-check text-forestGreen/40"></i> <span>Secured Network</span></div>
+        </div>
+    </section>
+
+    <!-- 4. VALUE PROPOSITION SECTION (Layout matching 1001208148.jpg) -->
+    <section id="about" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="font-serif text-3xl sm:text-4xl text-gray-900 font-bold mb-4">Why Should You Partner With Us?</h2>
+            <p class="text-gray-500 font-light">We structure international complex operations into clear, safe, and actionable milestones for our corporate and private clients.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                <div class="w-12 h-12 bg-forestGreen/5 rounded-xl flex items-center justify-center text-forestGreen font-bold text-lg mb-6 border border-forestGreen/10">1</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Professional Guidance</h3>
+                <p class="text-gray-500 text-sm leading-relaxed font-light">Experienced, localized support agents making sure your document trails, visas, and school files comply cleanly with current institutional policies.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                <div class="w-12 h-12 bg-forestGreen/5 rounded-xl flex items-center justify-center text-forestGreen font-bold text-lg mb-6 border border-forestGreen/10">2</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Transparent Costings</h3>
+                <p class="text-gray-500 text-sm leading-relaxed font-light">No hidden margins. Secure invoice routing options across international corridors, clear upfront ticketing, and documented processing metrics.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                <div class="w-12 h-12 bg-forestGreen/5 rounded-xl flex items-center justify-center text-forestGreen font-bold text-lg mb-6 border border-forestGreen/10">3</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Easy Dynamic Booking</h3>
+                <p class="text-gray-500 text-sm leading-relaxed font-light">Skip bureaucratic logjams. Start operations straight from your phone, communicate inside active parameters via messaging, and track arrivals clearly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRIMARY SERVICES GRID (Layout matching 1001208149.jpg) -->
+    <section id="services" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="font-serif text-3xl sm:text-4xl text-gray-900 font-bold mb-4">Our Core Strategic Offerings</h2>
+                <p class="text-gray-500 font-light">High-standard management optimized for efficiency, reach, and business execution consistency.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-neutralBg border border-gray-100 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="service-icon text-forestGreen text-3xl mb-6 transition-transform duration-300"><i class="fa-solid fa-passport"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Egypt Visa Processing</h3>
+                        <p class="text-gray-500 text-sm font-light leading-relaxed mb-6">Complete protocol filing, tracking assistance, and requirement vetting to secure your valid immigration clearances safely.</p>
+                    </div>
+                    <a href="https://wa.me/201279994345?text=Hello,%20I%20am%20interested%20in%20Egypt%20Visa%20Processing." target="_blank" class="text-sm font-semibold text-forestGreen flex items-center space-x-2 hover:text-goldAccent transition">
+                        <span>Initiate Application</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-neutralBg border border-gray-100 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="service-icon text-forestGreen text-3xl mb-6 transition-transform duration-300"><i class="fa-solid fa-ticket"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Ticket Reservations</h3>
+                        <p class="text-gray-500 text-sm font-light leading-relaxed mb-6">Optimized booking routes across verified flight manifests, giving you the best price parameters for regional and international travel.</p>
+                    </div>
+                    <a href="https://wa.me/201279994345?text=Hello,%20I%20am%20interested%20in%20Ticket%20Reservations." target="_blank" class="text-sm font-semibold text-forestGreen flex items-center space-x-2 hover:text-goldAccent transition">
+                        <span>Book Flight Seat</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-neutralBg border border-gray-100 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="service-icon text-forestGreen text-3xl mb-6 transition-transform duration-300"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Egypt Admission Processing</h3>
+                        <p class="text-gray-500 text-sm font-light leading-relaxed mb-6">End-to-end management for university applications, standard institutional documentation, and official intake approvals.</p>
+                    </div>
+                    <a href="https://wa.me/201279994345?text=Hello,%20I%20am%20interested%20in%20Egypt%20Admission%20Processing." target="_blank" class="text-sm font-semibold text-forestGreen flex items-center space-x-2 hover:text-goldAccent transition">
+                        <span>Apply to University</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-neutralBg border border-gray-100 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="service-icon text-forestGreen text-3xl mb-6 transition-transform duration-300"><i class="fa-solid fa-comments"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Travel Consultations</h3>
+                        <p class="text-gray-500 text-sm font-light leading-relaxed mb-6">One-on-one tailored assessment briefings to analyze eligibility rules, institutional fit, and safe logistics timelines.</p>
+                    </div>
+                    <a href="https://wa.me/201279994345?text=Hello,%20I%20would%20like%20to%20book%20a%20Travel%20Consultation." target="_blank" class="text-sm font-semibold text-forestGreen flex items-center space-x-2 hover:text-goldAccent transition">
+                        <span>Schedule Advisory</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-neutralBg border border-gray-100 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="service-icon text-forestGreen text-3xl mb-6 transition-transform duration-300"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Logistics Service</h3>
+                        <p class="text-gray-500 text-sm font-light leading-relaxed mb-6">Seamless coordination of cargo routing, freight parameters, and transport tracking across localized business nodes.</p>
+                    </div>
+                    <a href="https://wa.me/201279994345?text=Hello,%20I%20am%20inquiring%20about%20Logistics%20Services." target="_blank" class="text-sm font-semibold text-forestGreen flex items-center space-x-2 hover:text-goldAccent transition">
+                        <span>Deploy Shipment</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FREQUENTLY ASKED QUESTIONS (Layout matching 1001208150.jpg) -->
+    <section id="faqs" class="py-24 max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl text-gray-900 font-bold mb-3">Frequently Asked Questions</h2>
+            <p class="text-gray-500 font-light">Quick transparency updates regarding core operations metrics.</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <details class="group">
+                    <summary class="list-none flex items-center justify-between font-semibold text-gray-900 cursor-pointer">
+                        <span>What is included in the Al Waseem processing structure?</span>
+                        <span class="text-forestGreen transition group-open:rotate-45"><i class="fa-solid fa-plus text-sm"></i></span>
+                    </summary>
+                    <p class="text-sm text-gray-500 font-light mt-4 leading-relaxed border-t border-gray-500/5 pt-4">
+                        Our full-service architecture covers complete file vetting, validation tracking with local ministries or carriers, real-time consultation notifications, and active terminal deployment metrics based on your contract type.
+                    </p>
+                </details>
+            </div>
+            <!-- Accordion Item 2 -->
+            <div class="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <details class="group">
+                    <summary class="list-none flex items-center justify-between font-semibold text-gray-900 cursor-pointer">
+                        <span>How long does the Egypt University Admission processing take?</span>
+                        <span class="text-forestGreen transition group-open:rotate-45"><i class="fa-solid fa-plus text-sm"></i></span>
+                    </summary>
+                    <p class="text-sm text-gray-500 font-light mt-4 leading-relaxed border-t border-gray-500/5 pt-4">
+                        Standard cycle verification typically spans across 4 to 8 weeks depending on internal faculty windows and Ministry of Higher Education verification speeds. We actively expedite tracking nodes to minimize administrative friction.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. REAL CONVERSION CONTEXT FOOTER -->
+    <footer class="bg-forestGreen text-white/90 pt-16 pb-32 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <div class="font-serif text-xl tracking-wider text-white font-bold leading-none mb-4">
+                    <span>AL WASEEM</span><br>
+                    <span class="text-xs tracking-[0.25em] text-goldAccent font-sans font-medium">GLOBAL SOLUTIONS</span>
+                </div>
+                <p class="text-sm text-white/60 font-light leading-relaxed max-w-xs">
+                    Providing top-tier global integrations across travel paths, administrative entries, and strategic logistics frameworks.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-widest text-goldAccent mb-4">Direct Office Inquiries</h4>
+                <ul class="space-y-3 text-sm font-light">
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-solid fa-phone text-xs text-goldAccent"></i>
+                        <span><strong>Nigeria Hub:</strong> +234 814 994 5127</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-solid fa-phone text-xs text-goldAccent"></i>
+                        <span><strong>Egypt Hub:</strong> +20 127 999 4345</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-widest text-goldAccent mb-4">Global Security Alignment</h4>
+                <p class="text-sm text-white/60 font-light leading-relaxed">
+                    All document transmissions are processed in compliance with modern structural tracking guidelines to maintain absolute integrity.
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/40 font-light">
+            <p>&copy; 2026 Al Waseem Global Solutions. All Rights Reserved.</p>
+            <div class="flex space-x-4 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-goldAccent"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                <a href="#" class="hover:text-goldAccent"><i class="fa-brands fa-instagram text-sm"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FIXED STICKY FOOTER BAR FOR INSTANT ACCESS -->
+    <div class="fixed bottom-0 inset-x-0 bg-white border-t border-gray-100 shadow-[0_-8px_30px_rgb(0,0,0,0.04)] z-40 py-4 px-4 sm:px-6">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-xs text-gray-500 font-medium">
+                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> NGR Support: +234 814 994 5127</span>
+                <span class="hidden sm:inline text-gray-300">|</span>
+                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> EGY Support: +20 127 999 4345</span>
+            </div>
+            <a href="https://wa.me/201279994345" target="_blank" class="w-full sm:w-auto bg-[#25D366] hover:bg-[#20ba56] text-white font-semibold text-sm px-6 py-3 rounded-full flex items-center justify-center space-x-2 shadow-md transition border-2 border-goldAccent/40">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Chat on WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
