@@ -1,1 +1,108 @@
 
+/* ==========================================================================
+   AL WASEEM GLOBAL SOLUTIONS - PREMIUM STYLESHEET
+   ========================================================================== */
+
+/* Core Reset & Variables */
+:root {
+    --color-primary: #062c1d;     /* Deep Forest Green */
+    --color-secondary: #0a3d29;   /* Medium Forest Green */
+    --color-accent: #c5a880;      /* Soft Premium Gold */
+    --color-accent-hover: #b3946b;/* Darker Accent Gold */
+    --color-dark: #050b08;        /* Near Black Base */
+    --color-light: #f4f7f5;       /* Soft Off-White */
+    --color-card-bg: #091410;     /* Translucent Dark Green for Cards */
+    --font-primary: 'Plus Jakarta Sans', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-dark);
+    color: #cbd5e1;
+    font-family: var(--font-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+}
+
+/* Typography Enhancements */
+.premium-text-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-serif);
+}
+
+/* Custom Background Gradients */
+.bg-mesh {
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(6, 44, 29, 0.4) 0%, transparent 45%),
+        radial-gradient(circle at 90% 80%, rgba(197, 168, 128, 0.08) 0%, transparent 50%);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+    background: rgba(9, 20, 16, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 168, 128, 0.1);
+    transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+    border-color: rgba(197, 168, 128, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Interactive Components */
+.search-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(197, 168, 128, 0.2);
+}
+
+/* Utilities */
+.sticky-header {
+    transition: var(--transition-smooth);
+}
+
+.sticky-header.scrolled {
+    background: rgba(5, 11, 8, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Swiper Slider Customization Override */
+.swiper-pagination-bullet-active {
+    background: var(--color-accent) !important;
+    width: 24px !important;
+    border-radius: 4px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #ffffff;
+    opacity: 0.4;
+}
