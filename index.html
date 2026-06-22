@@ -413,7 +413,7 @@
             line-height: 1.6;
         }
 
-        /* --- NEW: UNIVERSITY PLACEMENT HUB --- */
+        /* --- UNIVERSITY PLACEMENT HUB --- */
         .uni-section {
             padding: 6rem 5%;
             max-width: 1200px;
@@ -438,7 +438,7 @@
         }
 
         .uni-img-box {
-            height: 200px;
+            height: 220px;
             width: 100%;
             position: relative;
         }
@@ -565,7 +565,7 @@
             gap: 0.5rem;
         }
 
-        /* --- INTEGRATED CALL TO ACTION BAR --- */
+        /* --- CALL TO ACTION BANNER (Mobile Distortions Fixed) --- */
         .cta-bar {
             background-color: var(--color-primary);
             color: #ffffff;
@@ -577,12 +577,22 @@
             flex-direction: column;
             gap: 3rem;
             position: relative;
-            bottom: -2rem;
             z-index: 2;
         }
 
         @media (min-width: 992px) {
-            .cta-bar { flex-direction: row; justify-content: space-between; align-items: center; bottom: -4rem; }
+            .cta-bar { 
+                flex-direction: row; 
+                justify-content: space-between; 
+                align-items: center; 
+                margin-bottom: -4rem; 
+            }
+        }
+
+        @media (max-width: 991px) {
+            .cta-bar {
+                margin: 3rem auto;
+            }
         }
 
         .cta-left h2 {
@@ -621,6 +631,7 @@
             justify-content: center;
             color: var(--color-accent);
             font-size: 1.1rem;
+            flex-shrink: 0; /* Prevents oval distortion on mobile screens */
         }
 
         .contact-info span {
@@ -656,7 +667,7 @@
             background: #b59567;
         }
 
-        /* --- FOOTER (Zero Gap Alignment) --- */
+        /* --- FOOTER (Zero Gap Alignment Fixed) --- */
         footer {
             background: var(--color-dark);
             color: #ffffff;
@@ -739,11 +750,6 @@
         }
 
         .footer-bottom {
-            max-width: 1200px;
-            margin: 0 auto;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            padding-top: 2rem;
-                    .footer-bottom {
             max-width: 1200px;
             margin: 0 auto;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -860,7 +866,7 @@
             <!-- Al-Azhar Card -->
             <div class="uni-card">
                 <div class="uni-img-box">
-                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=500&q=80" alt="Al-Azhar University Students Setting">
+                    <img src="https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=500&q=80" alt="Al-Azhar University Style Academic Architecture">
                 </div>
                 <div class="uni-content">
                     <div>
@@ -915,7 +921,7 @@
             <div class="destinations-grid">
                 <!-- Nile Cruise Block -->
                 <div class="dest-card" onclick="window.location.href='https://wa.me/2348149945127?text=Hello%20Al%20Waseem,%20I%20am%20interested%20in%20booking%20a%20Nile%20Water%20Boat%20Cruise%20package.'">
-                    <img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=400&q=80" alt="Beautiful Nile River Cruise Boat">
+                    <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=400&q=80" alt="Beautiful Nile River Cruise Boat in Cairo">
                     <div class="dest-overlay">
                         <p>Cairo Highlights</p>
                         <h4>Nile Water Boat Cruises</h4>
@@ -924,7 +930,7 @@
                 </div>
                 <!-- Pyramid Camel Ride Block -->
                 <div class="dest-card" onclick="window.location.href='https://wa.me/2348149945127?text=Hello%20Al%20Waseem,%20I%20want%20to%20book%20a%20Pyramid%20Tour%20with%20Camel%20and%20Horse%20riding.'">
-                    <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=400&q=80" alt="Camels and Horses at Egypt Pyramids">
+                    <img src="https://images.unsplash.com/photo-1568322422394-fa44a7217523?auto=format&fit=crop&w=400&q=80" alt="Camels and Horses at Egypt Pyramids">
                     <div class="dest-overlay">
                         <p>Giza Tours</p>
                         <h4>Camel & Horse Riding</h4>
@@ -933,7 +939,7 @@
                 </div>
                 <!-- Desert Safari Block -->
                 <div class="dest-card" onclick="window.location.href='https://wa.me/2348149945127?text=Hello%20Al%20Waseem,%20I%20am%20interested%20in%20the%20Desert%20Safari%20and%20Quad%20Bike%20ride%20packages.'">
-                    <img src="https://images.unsplash.com/photo-1623067425492-30062bc460fc?auto=format&fit=crop&w=400&q=80" alt="Desert Safari Bike Riding">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=400&q=80" alt="Desert Safari Bike Riding">
                     <div class="dest-overlay">
                         <p>Adventure Safari</p>
                         <h4>Desert Bike & Quad Rides</h4>
@@ -1014,4 +1020,3 @@
 
 </body>
 </html>
-
