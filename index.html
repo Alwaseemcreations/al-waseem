@@ -3,149 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Al Waseem Global Solutions | Study & Travel Egypt</title>
+<title>Al Waseem Global Solutions | Education & Travel Experts</title>
 <style>
-/* CSS Variables */
+/* CSS VARIABLES */
 :root {
 --primary: #1B4332;
 --secondary: #2D6A4F;
 --gold: #D4AF37;
 --white: #FFFFFF;
---off-white: #F8F9FA;
---text: #1F2933;
---light-border: #E5E7EB;
+--light: #F8F9FA;
+--dark: #1F2933;
+--border: #E5E7EB;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); line-height: 1.6; background: var(--off-white); }
-/* Layout Utilities */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.section { padding: 80px 0; }
-h2 { text-align: center; margin-bottom: 40px; color: var(--primary); }
-/* Navbar */
-.navbar { background: var(--white); padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--light-border); }
-.nav-container { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
-.nav-links { display: flex; gap: 20px; list-style: none; }
-.nav-links a { text-decoration: none; color: var(--text); font-weight: 600; }
-.btn-nav { padding: 8px 15px; border-radius: 5px; background: var(--primary); color: var(--white); text-decoration: none; }
-/* Hero */
-.hero { background: var(--primary); color: var(--white); padding: 100px 20px; text-align: center; }
-.hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
-.hero-btns { display: flex; gap: 15px; justify-content: center; margin-top: 30px; flex-wrap: wrap; }
-.btn { padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; cursor: pointer; }
-.btn-gold { background: var(--gold); color: var(--white); }
-.btn-green { background: var(--secondary); color: var(--white); border: 1px solid var(--gold); }
-/* Grids */
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.card { background: var(--white); padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
-.card:hover { transform: translateY(-5px); }
-.card img { width: 100%; height: 180px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; }
-/* Floating Buttons */
-.fab { position: fixed; bottom: 20px; right: 20px; z-index: 999; }
-.fab a { display: block; background: var(--primary); color: var(--white); padding: 15px; border-radius: 50px; margin-top: 10px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
-/* Footer */
-footer { background: var(--primary); color: var(--white); padding: 50px 20px; text-align: center; }
-@media (max-width: 768px) { .nav-links { display: none; } }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background: var(--light); color: var(--dark); line-height: 1.6; }
+/* BUTTONS */
+.btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block; cursor: pointer; border: none; }
+.btn-primary { background: var(--primary); color: var(--white); }
+.btn-primary:hover { background: var(--secondary); }
+.btn-gold { background: var(--gold); color: var(--primary); }
+.btn-gold:hover { background: #b8962f; }
+/* NAV */
+header { position: sticky; top: 0; background: var(--white); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: 800; color: var(--primary); font-size: 1.2rem; }
+nav a { margin: 0 10px; text-decoration: none; color: var(--dark); font-weight: 500; }
+.menu-toggle { display: none; cursor: pointer; }
+/* HERO */
+.hero { display: flex; align-items: center; padding: 80px 5%; gap: 40px; background: #fff; }
+.hero-content { flex: 1; }
+.hero-visual { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card-img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; }
+/* SECTIONS */
+section { padding: 80px 5%; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.card { background: var(--white); padding: 30px; border-radius: 12px; border: 1px solid var(--border); transition: 0.3s; }
+.card:hover { border-color: var(--gold); }
+h2 { color: var(--primary); margin-bottom: 30px; text-align: center; }
+/* FOOTER & FLOATING */
+footer { background: var(--primary); color: var(--white); padding: 50px 5%; text-align: center; }
+.float-btns { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 999; }
+.float-btn { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 20px; }
+@media (max-width: 768px) {
+.hero { flex-direction: column; text-align: center; }
+.menu-toggle { display: block; }
+nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: white; padding: 20px; }
+}
 </style>
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar">
-<div class="container nav-container">
-<div class="logo">AL WASEEM GLOBAL SOLUTIONS</div>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div>
-<a href="tel:+2348149945127" class="btn-nav">Call Now</a>
-</div>
-</div>
+<header>
+<div class="logo">AL WASEEM GLOBAL</div>
+<div class="menu-toggle" onclick="document.querySelector('nav').style.display = 'flex'">☰</div>
+<nav>
+<a href="#home">Home</a><a href="#services">Services</a><a href="#study">Study</a><a href="#tourism">Tourism</a><a href="#contact">Contact</a>
+<a href="tel:+2348149945127" class="btn btn-primary">Call Now</a>
 </nav>
-<!-- Hero Section -->
-<section class="hero" id="home">
+</header>
+<section id="home" class="hero">
+<div class="hero-content">
 <h1>Study, Travel & Explore with Confidence</h1>
-<p>Your expert partner for university admissions in Egypt and curated global travel experiences.</p>
-<div class="hero-btns">
-<a href="#study" class="btn btn-gold">Study in Egypt</a>
-<a href="#tourism" class="btn btn-green">Explore Tours</a>
-<a href="[https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+an+enquiry](https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+an+enquiry)." class="btn btn-gold">WhatsApp Us</a>
+<p>Al Waseem Global Solutions provides expert guidance for university admissions in Egypt, visa support, and curated travel experiences.</p>
+
+<div style="display: flex; gap: 10px;">
+<a href="#study" class="btn btn-primary">Study in Egypt</a>
+<a href="[https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20an%20enquiry](https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20an%20enquiry)." class="btn btn-gold">WhatsApp Us</a>
+</div>
+</div>
+<div class="hero-visual">
+<img src="1001209363.jpg" class="card-img" alt="Education">
+<img src="1001209340.jpg" class="card-img" alt="Travel">
 </div>
 </section>
-<!-- Services Section -->
-<section class="section container" id="services">
+<section id="services">
 <h2>Our Services</h2>
 <div class="grid">
-<div class="card">
-<h3>Education Support</h3>
-<p>University admission assistance, student visas, and application guidance for top Egyptian institutions.</p>
-</div>
-<div class="card">
-<h3>Travel & Tourism</h3>
-<p>Visa processing, flight booking, and customized holiday packages including Nile cruises and historical tours.</p>
-</div>
+<div class="card"><h3>Education Support</h3><p>University admission processing and student consultation for Egypt universities.</p></div>
+<div class="card"><h3>Travel & Tourism</h3><p>Visa assistance, hotel bookings, and guided tours like 1001208373.jpg and 1001208147.jpg.</p></div>
 </div>
 </section>
-<!-- Study Section -->
-<section class="section container" id="study" style="background: var(--white);">
+<section id="study" style="background: var(--white);">
 <h2>Study in Egypt</h2>
 <div class="grid">
 <div class="card">
-<img src="[https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600](https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600)" alt="University">
 <h3>Al Azhar University</h3>
-<a href="[https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Al+Azhar+University+Admission](https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Al+Azhar+University+Admission)." class="btn btn-green">WhatsApp</a>
+<a href="[https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Al%20Azhar%20University%20Admission](https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Al%20Azhar%20University%20Admission)." class="btn btn-primary">WhatsApp</a>
 </div>
 <div class="card">
-<img src="[https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600](https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600)" alt="Cairo">
 <h3>Cairo University</h3>
-<a href="[https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Cairo+University+Admission](https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Cairo+University+Admission)." class="btn btn-green">WhatsApp</a>
+<a href="[https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Cairo%20University%20Admission](https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Cairo%20University%20Admission)." class="btn btn-primary">WhatsApp</a>
 </div>
 </div>
 </section>
-<!-- Tourism Section -->
-<section class="section container" id="tourism">
+<section id="tourism">
 <h2>Explore Egypt</h2>
 <div class="grid">
-<div class="card">
-<img src="[https://images.unsplash.com/photo-1539768942893-d53e86118d45?w=600](https://images.unsplash.com/photo-1539768942893-d53e86118d45?w=600)" alt="Nile">
-<h3>Nile River Cruise</h3>
-<a href="[https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Nile+River+Cruise+package](https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Nile+River+Cruise+package)." class="btn btn-green">WhatsApp</a>
-</div>
-<div class="card">
-<img src="[https://images.unsplash.com/photo-1503177119275-055c50352d43?w=600](https://images.unsplash.com/photo-1503177119275-055c50352d43?w=600)" alt="Pyramids">
-<h3>Pyramids Tour</h3>
-<a href="[https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Pyramids+Tour+package](https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+enquiry+for+Pyramids+Tour+package)." class="btn btn-green">WhatsApp</a>
-</div>
+<div class="card"><img src="1001208151.jpg" style="width:100%; height:150px; object-fit:cover;"><h3>Nile River Cruise</h3><a href="[https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Nile%20River%20Cruise%20package](https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Nile%20River%20Cruise%20package)." class="btn btn-gold">WhatsApp</a></div>
+<div class="card"><img src="1001208149.jpg" style="width:100%; height:150px; object-fit:cover;"><h3>Pyramids Tour</h3><a href="[https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Pyramids%20Tour%20package](https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20enquiry%20for%20Pyramids%20Tour%20package)." class="btn btn-gold">WhatsApp</a></div>
 </div>
 </section>
-<!-- Contact Section -->
-<section class="section container" id="contact" style="text-align: center;">
+<section id="contact" style="background: var(--primary); color: white;">
 <h2>Start Your Enquiry Today</h2>
-<p>Nigeria: +2348149945127 | Egypt: +201279994345</p>
-
-
-<a href="tel:+2348149945127" class="btn btn-green">Call Nigeria</a>
-<a href="tel:+201279994345" class="btn btn-green">Call Egypt</a>
+<p style="text-align: center;">Nigeria: +2348149945127 | Egypt: +201279994345</p>
 </section>
-<!-- Floating Buttons -->
-<div class="fab">
-<a href="[https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+an+enquiry](https://wa.me/2348149945127?text=Hello+Al+Waseem+Global+Solutions,+I+want+to+make+an+enquiry).">WhatsApp</a>
-<a href="tel:+2348149945127">Call</a>
+<div class="float-btns">
+<a href="[https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20an%20enquiry](https://wa.me/2348149945127?text=Hello%20Al%20Waseem%20Global%20Solutions,%20I%20want%20to%20make%20an%20enquiry)." class="float-btn" style="background:#25D366;">WA</a>
+<a href="tel:+2348149945127" class="float-btn" style="background:#1B4332;">📞</a>
 </div>
-<footer>
-<p>© 2026 Al Waseem Global Solutions. All Rights Reserved.</p>
-</footer>
-<script>
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function (e) {
-e.preventDefault();
-document.querySelector(this.getAttribute('href')).scrollIntoView({
-behavior: 'smooth'
-});
-});
-});
-</script>
+<footer>© 2026 Al Waseem Global Solutions. All rights reserved.</footer>
 </body>
 </html>
