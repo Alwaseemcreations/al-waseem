@@ -1,149 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Al Waseem Global Solutions</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #222;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Waseem Global Solutions – Study, Travel & Tourism</title>
 
-    header {
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 1px solid #eee;
-    }
+<style>
+/* ===== RESET ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial, sans-serif;
+color:#1F2933;
+background:#fff;
+line-height:1.6;
+overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+/* ===== THEME ===== */
+:root{
+--green:#1B4332;
+--green2:#2D6A4F;
+--gold:#D4AF37;
+--gray:#6B7280;
+--border:#E5E7EB;
+}
 
-    header p {
-      margin-top: 10px;
-      color: #666;
-      font-size: 16px;
-    }
+/* ===== LAYOUT ===== */
+.container{width:92%;max-width:1150px;margin:auto}
+.section{padding:90px 0}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{color:var(--green);font-size:2rem}
+.section-title p{color:var(--gray);margin-top:10px}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
+/* ===== NAV ===== */
+nav{
+position:sticky;top:0;
+background:#fff;
+border-bottom:1px solid var(--border);
+z-index:1000;
+}
+.nav-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+.logo{font-weight:700;color:var(--green)}
+.nav a{margin-left:18px;font-size:14px}
 
-    .section {
-      margin-bottom: 40px;
-    }
+/* ===== HERO ===== */
+.hero{
+background:linear-gradient(135deg,var(--green),var(--green2));
+color:#fff;
+padding:100px 0;
+}
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+.hero h1{font-size:2.6rem}
+.hero p{opacity:.85;margin:15px 0 25px}
 
-    .section h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
+/* ===== BUTTONS ===== */
+.btn{
+display:inline-block;
+padding:12px 20px;
+border-radius:6px;
+font-weight:600;
+font-size:14px;
+transition:.3s;
+}
+.btn-gold{background:var(--gold);color:#000}
+.btn-outline{border:2px solid #fff;color:#fff}
 
-    .card {
-      border: 1px solid #eee;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
+/* ===== CARDS ===== */
+.grid-3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+.card{
+border:1px solid var(--border);
+padding:20px;
+border-radius:10px;
+transition:.3s;
+background:#fff;
+}
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border-color:var(--green2);
+}
+.card h3{color:var(--green);margin-bottom:10px}
+.card p{font-size:14px;color:var(--gray)}
 
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 14px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 14px;
-    }
+/* ===== TOURISM ===== */
+.tag{
+display:inline-block;
+font-size:12px;
+background:#FEF3C7;
+color:#92400E;
+padding:4px 10px;
+border-radius:20px;
+margin-bottom:10px;
+}
 
-    .btn.secondary {
-      background: #007bff;
-    }
+/* ===== SECTIONS FADE ===== */
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:all .8s ease;
+}
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      border-top: 1px solid #eee;
-      color: #777;
-      font-size: 13px;
-    }
-  </style>
+/* ===== FOOTER ===== */
+footer{
+background:#0F2A1E;
+color:#aaa;
+padding:50px 0;
+margin-top:60px;
+text-align:center;
+}
+
+@media(max-width:900px){
+.hero-grid,.grid-3{grid-template-columns:1fr}
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Al Waseem Global Solutions</h1>
-  <p>University Admission & Application Support Services</p>
-</header>
+<!-- NAV -->
+<nav>
+<div class="container nav-inner">
+<div class="logo">Al Waseem Global Solutions</div>
+<div class="nav">
+<a href="#services">Services</a>
+<a href="#study">Study</a>
+<a href="#tourism">Tourism</a>
+<a href="#centers">Centers</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
 
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-grid fade">
+<div>
+<h1>Study, Travel & Explore Egypt with Confidence</h1>
+<p>We connect students, travelers, and visitors with trusted educational institutions, tourism experiences, and relocation support services.</p>
+<a href="#contact" class="btn btn-gold">Get Started</a>
+<a href="#services" class="btn btn-outline">Explore Services</a>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section fade">
 <div class="container">
-
-  <div class="section">
-    <h2>About Us</h2>
-    <div class="card">
-      We assist students with university admissions, documentation guidance, and application processing for top institutions in Egypt and beyond.
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Universities</h2>
-
-    <div class="card">
-      Al-Azhar University<br/>
-      <a class="btn" href="https://wa.me/201279994345?text=Hello%20Al%20Waseem%20Global%20Solutions%20I%20want%20to%20make%20enquiry%20for%20Al%20Azhar%20University%20Admission" target="_blank">
-        Enquire on WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      Ain Shams University<br/>
-      <a class="btn" href="https://wa.me/201279994345?text=Hello%20Al%20Waseem%20Global%20Solutions%20I%20want%20to%20make%20enquiry%20for%20Ain%20Shams%20University%20Admission" target="_blank">
-        Enquire on WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      Cairo University<br/>
-      <a class="btn" href="https://wa.me/201279994345?text=Hello%20Al%20Waseem%20Global%20Solutions%20I%20want%20to%20make%20enquiry%20for%20Cairo%20University%20Admission" target="_blank">
-        Enquire on WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      American University in Cairo<br/>
-      <a class="btn" href="https://wa.me/201279994345?text=Hello%20Al%20Waseem%20Global%20Solutions%20I%20want%20to%20make%20enquiry%20for%20American%20University%20in%20Cairo%20Admission" target="_blank">
-        Enquire on WhatsApp
-      </a>
-    </div>
-
-  </div>
-
-  <div class="section">
-    <h2>Contact</h2>
-
-    <div class="card">
-      WhatsApp: +20 127 999 4345<br/>
-      <a class="btn secondary" href="https://wa.me/201279994345" target="_blank">Chat Now</a>
-    </div>
-
-    <div class="card">
-      International Line: +234 814 994 5127<br/>
-      <a class="btn secondary" href="https://wa.me/2348149945127" target="_blank">Chat Now</a>
-    </div>
-  </div>
-
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Professional support for education, tourism, and relocation</p>
 </div>
 
+<div class="grid-3">
+<div class="card">
+<h3>Study Abroad Support</h3>
+<p>Admission guidance, documentation, and university placement assistance.</p>
+</div>
+
+<div class="card">
+<h3>Tourism Services</h3>
+<p>Explore Egypt with guided tours, cultural trips, and travel planning.</p>
+</div>
+
+<div class="card">
+<h3>Relocation Assistance</h3>
+<p>Support for students and visitors settling in Egypt smoothly.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STUDY -->
+<section id="study" class="section fade">
+<div class="container">
+<div class="section-title">
+<h2>Study in Egypt</h2>
+<p>Access top universities with guided admission support</p>
+</div>
+
+<div class="grid-3">
+<div class="card"><h3>Cairo University</h3><p>One of Egypt’s top public universities.</p></div>
+<div class="card"><h3>Ain Shams University</h3><p>Strong academic and international programs.</p></div>
+<div class="card"><h3>Al-Azhar University</h3><p>Globally recognized institution of learning.</p></div>
+</div>
+</div>
+</section>
+
+<!-- TOURISM -->
+<section id="tourism" class="section fade">
+<div class="container">
+<div class="section-title">
+<h2>Tourism in Egypt</h2>
+<p>Discover culture, history, and adventure</p>
+</div>
+
+<div class="grid-3">
+<div class="card">
+<span class="tag">Cultural</span>
+<h3>Pyramids of Giza</h3>
+<p>Explore one of the Seven Wonders of the Ancient World.</p>
+</div>
+
+<div class="card">
+<span class="tag">Adventure</span>
+<h3>Nile Cruise</h3>
+<p>Experience Egypt through a relaxing river journey.</p>
+</div>
+
+<div class="card">
+<span class="tag">Historic</span>
+<h3>Luxor & Aswan</h3>
+<p>Ancient temples, monuments, and rich heritage sites.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TOURIST CENTERS -->
+<section id="centers" class="section fade">
+<div class="container">
+<div class="section-title">
+<h2>Tourist Centers & Support Hubs</h2>
+<p>Assistance points for visitors across major cities</p>
+</div>
+
+<div class="grid-3">
+<div class="card">
+<h3>Cairo Support Center</h3>
+<p>Visa help, tour guidance, and student support services.</p>
+</div>
+
+<div class="card">
+<h3>Alexandria Tourism Hub</h3>
+<p>Coastal city tours and travel coordination services.</p>
+</div>
+
+<div class="card">
+<h3>Luxor Travel Desk</h3>
+<p>Historical tours and guided cultural experiences.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade">
+<div class="container">
+<div class="section-title">
+<h2>Contact Us</h2>
+<p>We are ready to assist you anytime</p>
+</div>
+
+<a class="btn btn-gold" href="https://wa.me/">Chat on WhatsApp</a>
+</div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  © 2026 Al Waseem Global Solutions. All Rights Reserved.
+<p>© 2026 Al Waseem Global Solutions. All rights reserved.</p>
 </footer>
+
+<!-- SCROLL ANIMATION -->
+<script>
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{threshold:0.15});
+
+document.querySelectorAll(".fade").forEach(el=>{
+observer.observe(el);
+});
+</script>
 
 </body>
 </html>
