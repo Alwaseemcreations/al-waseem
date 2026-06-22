@@ -1,39 +1,338 @@
- <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Waseem Global Solutions</title>
-    <!-- Tailwind CSS v4 CDN for premium utility styles -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts: Plus Jakarta Sans for high-end typography -->
+    <title>Al Waseem Global Solutions | Your Bridge to Global Connections</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional support for Egypt visas, global university admissions, ticket reservations, and luxury travel consultations with Al Waseem Global Solutions.">
+    <meta name="keywords" content="Al Waseem, Egypt Visa, Admission Processing, Ticket Reservations, Travel Consultations, Luxury Travel Agency">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Al Waseem Global Solutions | Your Bridge to Global Connections">
+    <meta property="og:description" content="Professional support for visas, university admissions, travel planning, and international ticket reservations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Premium Fonts: Playfair Display for Serifs & Inter for Clean Sans Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #090d16;
-        }
-        /* Custom smooth oklab gradient text */
-        .premium-text-gradient {
-            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,650;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-slate-300 antialiased selection:bg-indigo-500/30 selection:text-white">
+<body>
 
-    <!-- 1. HEADER & NAVIGATION -->
-    <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#090d16]/80 border-b border-slate-900/80">
-        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-            <!-- Brand Identity Architecture -->
-            <div class="flex items-center space-x-3 group">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-indigo-500/10 transition-transform group-hover:scale-105">
-                    <!-- Custom SVG Minimal Logo Mark -->
-                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m12 3-1.912 5.886H3.877l4.956 3.6L6.921 18.37 12 14.77l5.079 3.6-1.912-5.884 4.956-3.6h-6.211z"/>
+    <!-- STICKY HEADER SECTION -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <div class="logo-placeholder">
+                <!-- Kept clean transparent to overlay gracefully as requested -->
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#destinations" class="nav-link">Destinations</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </nav>
+            <a href="#contact" class="btn-header-cta">Get Started</a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <!-- Cinematic High-End Mountain/Winding Road Backdrop -->
+        <div class="hero-bg-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=85" alt="Premium travel winding road mountain landscape" class="hero-bg-image">
+        
+        <div class="hero-content">
+            <span class="hero-label">AL WASEEM GLOBAL SOLUTIONS</span>
+            <h1 class="hero-title">CONNECTING YOU TO<br>GLOBAL OPPORTUNITIES</h1>
+            
+            <div class="hero-sub-wrapper">
+                <span class="decorative-line"></span>
+                <p class="hero-subheading">Your Bridge to Global Connections</p>
+                <span class="decorative-line"></span>
+            </div>
+
+            <!-- PREMIUM SERVICE SEARCH-BAR COMPONENT -->
+            <div class="search-bar-container">
+                <div class="search-item active">
+                    <div class="search-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <span class="search-text">Egypt Visa</span>
+                </div>
+                
+                <div class="search-divider"></div>
+                
+                <div class="search-item">
+                    <div class="search-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m-6-3v3m12-3v3"/></svg>
+                    </div>
+                    <span class="search-text">Admission Processing</span>
+                </div>
+                
+                <div class="search-divider"></div>
+                
+                <div class="search-item">
+                    <div class="search-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 5v2m0 4v2m0 4v2M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+                    </div>
+                    <span class="search-text">Ticket Reservations</span>
+                </div>
+                
+                <div class="search-divider"></div>
+                
+                <div class="search-item">
+                    <div class="search-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+                    </div>
+                    <span class="search-text">Travel Consultations</span>
+                </div>
+
+                <button class="btn-inquiry" aria-label="Submit Inquiry">
+                    <svg class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    <span>Inquiry</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="section-container about-grid">
+            <div class="about-left">
+                <div class="context-label">ABOUT US <span class="label-line"></span></div>
+                <h2 class="section-title-serif">Your Trusted<br>Travel Partner</h2>
+                <div class="about-description">
+                    <p>At Al Waseem Global Solutions, we provide reliable support for Egypt visa processing, admission applications, ticket reservations, and travel consultations. Our goal is to simplify every step of your journey and help you access opportunities beyond borders with confidence and peace of mind.</p>
+                </div>
+            </div>
+            
+            <div class="about-right">
+                <div class="circular-image-container">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" alt="Historical architecture reflecting global educational and travel destinations" class="about-img">
+                    
+                    <!-- Floating Premium Badge -->
+                    <div class="premium-floating-badge">
+                        <div class="badge-inner">
+                            <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-9.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            <p class="badge-text">Trusted<br>Travel<br>Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="centered-heading-wrapper">
+                <span class="context-label-center">WHAT WE OFFER</span>
+                <h2 class="section-title-serif-center">Our Services</h2>
+                <span class="heading-accent-dash"></span>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/><circle cx="12" cy="9" r="2"/></svg>
+                    </div>
+                    <h3 class="service-card-title">Egypt Visa<br>Processing</h3>
+                    <p class="service-card-text">Professional assistance with visa application procedures and requirements.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M21 16V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2zM3 10h18M12 6v12"/></svg>
+                    </div>
+                    <h3 class="service-card-title">Ticket<br>Reservations</h3>
+                    <p class="service-card-text">Convenient and reliable flight reservation services.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m-6-3v3m12-3v3"/></svg>
+                    </div>
+                    <h3 class="service-card-title">Admission<br>Processing</h3>
+                    <p class="service-card-text">Guidance and support for educational admission applications.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2m12-16a4 4 0 11-8 0 4 4 0 018 0v0z"/></svg>
+                    </div>
+                    <h3 class="service-card-title">Travel<br>Consultations</h3>
+                    <p class="service-card-text">Personalized travel advice and planning assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section class="destinations-section" id="destinations">
+        <div class="section-container">
+            <div class="centered-heading-wrapper">
+                <span class="context-label-center">DESTINATIONS</span>
+                <h2 class="section-title-serif-center">Explore New Possibilities</h2>
+            </div>
+            
+            <div class="destinations-grid">
+                <!-- Card 1: Egypt -->
+                <div class="destination-card">
+                    <div class="dest-image-zoom-frame">
+                        <img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=600&q=80" alt="Giza Pyramids landscape in Egypt" class="dest-img">
+                    </div>
+                    <div class="dest-overlay-gradient"></div>
+                    <h3 class="dest-name">Egypt</h3>
+                </div>
+                
+                <!-- Card 2: Turkey -->
+                <div class="destination-card">
+                    <div class="dest-image-zoom-frame">
+                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80" alt="Hot air balloons over Cappadocia landscape in Turkey" class="dest-img">
+                    </div>
+                    <div class="dest-overlay-gradient"></div>
+                    <h3 class="dest-name">Turkey</h3>
+                </div>
+                
+                <!-- Card 3: UAE -->
+                <div class="destination-card">
+                    <div class="dest-image-zoom-frame">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai skyline view in United Arab Emirates" class="dest-img">
+                    </div>
+                    <div class="dest-overlay-gradient"></div>
+                    <h3 class="dest-name">United Arab Emirates</h3>
+                </div>
+                
+                <!-- Card 4: Saudi Arabia -->
+                <div class="destination-card">
+                    <div class="dest-image-zoom-frame">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" alt="Makkah clock tower architecture in Saudi Arabia" class="dest-img">
+                    </div>
+                    <div class="dest-overlay-gradient"></div>
+                    <h3 class="dest-name">Saudi Arabia</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION (CTA) SECTION -->
+    <section class="cta-banner-section" id="contact">
+        <div class="section-container cta-flex-container">
+            <div class="cta-left-content">
+                <h2 class="cta-heading-serif">BEGIN YOUR JOURNEY<br>WITH CONFIDENCE</h2>
+                <div class="cta-divider-line"></div>
+                <p class="cta-supporting-text">Professional support for visas, admissions, travel planning, and ticket reservations.</p>
+            </div>
+            
+            <div class="cta-right-channels">
+                <div class="contact-channel-item">
+                    <div class="channel-icon-bg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    </div>
+                    <div class="channel-labels">
+                        <span class="channel-title">Call or WhatsApp:</span>
+                        <a href="https://wa.me/2348149945127" class="channel-link">+2348149945127</a>
+                    </div>
+                </div>
+
+                <div class="contact-channel-item">
+                    <div class="channel-icon-bg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    </div>
+                    <div class="channel-labels">
+                        <span class="channel-title">Call or WhatsApp:</span>
+                        <a href="https://wa.me/201279994345" class="channel-link">+201279994345</a>
+                    </div>
+                </div>
+
+                <div class="contact-channel-item">
+                    <div class="channel-icon-bg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div class="channel-labels">
+                        <span class="channel-title">Email:</span>
+                        <a href="mailto:alwaseemglobalsolutions@gmail.com" class="channel-link">alwaseemglobalsolutions@gmail.com</a>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/2348149945127" class="btn-banner-action">
+                    <span>Contact Us Today</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="main-footer">
+        <div class="section-container footer-grid">
+            <div class="footer-brand-column">
+                <h3 class="footer-brand-name">AL WASEEM GLOBAL SOLUTIONS</h3>
+                <p class="footer-brand-tagline">Your Bridge to Global Connections</p>
+                <div class="footer-social-row">
+                    <a href="#" class="social-circle-link" aria-label="Facebook Native Channel">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="social-circle-link" aria-label="Instagram Native Channel">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" h="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+                    </a>
+                    <a href="#" class="social-circle-link" aria-label="LinkedIn Native Channel">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4 class="footer-column-heading">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact-column">
+                <h4 class="footer-column-heading">Contact Us</h4>
+                <ul class="footer-contact-info-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <span>+2348149945127</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <span>+201279994345</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span class="text-lowercase">alwaseemglobalsolutions@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-bar">
+            <p>&copy; 2025 Al Waseem Global Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
                     </svg>
                 </div>
                 <div>
